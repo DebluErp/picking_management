@@ -1,16 +1,16 @@
 {
     "App": {
-        "name": "picking_management",
+        "name": "new_picking_management",
         "version": "1.0.0",
         "env": "development"
     },
     "Database": {
         "type": "mysql",
-        "host": "localhost",
+        "host": "127.0.0.1",
         "port": 3306,
         "username": "sa",
         "password": "sysdba",
-        "database": "picking_management"
+        "database": "new_picking_management"
     },
     "DatabaseServer": {
         "type": "mysql",
@@ -18,7 +18,7 @@
         "port": 3306,
         "username": "admin",
         "password": "sysdba",
-        "database": "picking_management"
+        "database": "new_picking_management"
     },
     "BackupConfig": {
         "enabled": true,
