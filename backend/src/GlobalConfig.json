@@ -1,0 +1,39 @@
+{
+    "App": {
+        "name": "picking_management",
+        "version": "1.0.0",
+        "env": "development"
+    },
+    "Database": {
+        "type": "mysql",
+        "host": "localhost",
+        "port": 3306,
+        "username": "sa",
+        "password": "sysdba",
+        "database": "picking_management"
+    },
+    "DatabaseServer": {
+        "type": "mysql",
+        "host": "picking_management",
+        "port": 3306,
+        "username": "admin",
+        "password": "sysdba",
+        "database": "picking_management"
+    },
+    "BackupConfig": {
+        "enabled": true,
+        "schedule": "0 3 * * *",
+        "backupPath": "./backup",
+        "mysqldumpPath": "C:/Program Files/MySQL/MySQL Server 8.0/bin/mysqldump.exe",
+        "mysqlPath": "C:/Program Files/MySQL/MySQL Server 8.0/bin/mysql.exe"
+    },
+    "Logger": {
+        "level": "debug",
+        "enableFileLog": true,
+        "logPath": "./logs"
+    },
+    "FeatureFlags": {
+        "enableNewUI": false,
+        "useAIValidator": true
+    }
+}

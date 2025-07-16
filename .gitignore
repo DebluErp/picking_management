@@ -1,0 +1,46 @@
+# 👉 Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+.env
+.env.*      # .env.dev, .env.prod
+
+# 👉 Output builds
+dist/
+build/
+*.log
+
+# 👉 Editor settings
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# 👉 OS trash
+.DS_Store
+Thumbs.db
+
+# 👉 Docker
+docker-compose.override.yml
+**/Dockerfile.local
+.docker/
+
+# 👉 Logs and temporary
+tmp/
+temp/
+*.tmp
+
+# 👉 Database dumps
+*.sql
+*.sqlite
+*.db
+
+# 👉 Optional TypeScript artifacts
+*.tsbuildinfo
+
+# 👉 Optional Testing folders
+coverage/
+jest-*

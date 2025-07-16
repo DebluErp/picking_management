@@ -1,0 +1,19 @@
+version: "3.8"
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+
+  backend:
+    build: ./backend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./backend:/app              # แชร์โค้ดจาก host เข้า container
+      - /app/node_modules           # กัน node_modules ของ host ทับ container
+    environment:
+      NODE_ENV: production
+    command: ["npm", "run", "dev"]            # 🔥 สั่ง nodemon รัน
